@@ -1,0 +1,19 @@
+<div>
+  <p>1- Ler as matrículas que estão no arquivo matriculasSemDV.txt e gerar um arquivo de saída matriculasComDV.txt com as matrículas completas, conforme regra de formação descrita acima.</p>
+  <p>Selecionar um arquivo TXT com as matriculas e ele vai gerar um arquivo com as matriculas e seus respectivos DV</p>
+</div>
+
+<div class="ui-g-4">
+  <input type="file" (change)="gerarMatriculasComDV($event)" name="arquivo" accept='text/plain'>
+</div>
+
+<br /><br />
+
+<div>
+  <p>2- Ler as matrículas que estão no arquivo matriculasParaVerificar.txt e gerar um arquivo matriculasVerificadas.txt com as matrículas e um indicador de "verdadeiro" ou "falso" ao lado de cada matrícula, separado por espaço.</p>
+  <p>Selecionar um arquivo TXT com as matriculas e será realizado um arquivo chamado matriculasVerificadas.txt contendo a verificação se as matriculas são "verdadeiro" ou "falso".</p>
+</div>
+
+<div class="ui-g-4">
+  <input type="file" (change)="matriculasParaVerificar($event)" name="arquivo" accept='text/plain'>
+</div>
